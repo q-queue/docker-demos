@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  web-servier:
+    build: .
+    environment:
+      - PORT=${PORT}
+    ports:
+      - ${PORT}:${PORT}
+
